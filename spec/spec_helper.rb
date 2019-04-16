@@ -1,4 +1,4 @@
 require 'pry'
 require 'rspec'
 
-require_relative '../code.rb'
+require_relative '../lib/code.rb'
