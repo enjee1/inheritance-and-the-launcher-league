@@ -20,15 +20,15 @@ class SuperHero
   end
 
   def powers
-    ""
+    "Enhanced Strength"
   end
 
   def weakness
-    ""
+    "Cilantro"
   end
 
   def backstory
-    ""
+    "Bitten by a radioactive kitten."
   end
 
   def speed_in_mph
@@ -46,19 +46,57 @@ class SuperHero
 end
 
 class Speedster < SuperHero
+  def speed_in_mph
+    super * 1000
+  end
 end
 
 class Brawler < SuperHero
+  def health
+    super * 20
+  end
 end
 
 class Detective < SuperHero
+  def weakness
+    self.secret_identity
+  end
+
+  def speed_in_mph
+     super / 6
+  end
 end
 
 class Demigod < SuperHero
+  def home
+    "Cosmic Plane"
+  end
 end
 
 class JackOfAllTrades < SuperHero
+  def species
+    "Alien"
+  end
+
+  def home
+    "Venus"
+  end
+
+  def psychic?
+    !super
+  end
 end
 
 class WaterBased < SuperHero
+  def home
+    "Earth's Oceans"
+  end
+
+  def fans_per_thousand
+    super / 100
+  end
+
+  def psychic?
+    !super
+  end
 end

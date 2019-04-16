@@ -10,7 +10,7 @@ describe "Launcher League" do
 
   describe "The Detective" do
 
-    it " has a backstory" do
+    it " has a backstory" do            
       expect(nightbird.backstory).to_not be_empty
     end
 
